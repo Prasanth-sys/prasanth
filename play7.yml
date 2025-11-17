@@ -8,7 +8,7 @@
        src: /etc/PicsDir
        dest: /etc/mylink
        state: link #Soft link file will be created
-       owner: root
+       owner: ansible
        group: ansible
 ... 
 #End
