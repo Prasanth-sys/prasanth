@@ -6,7 +6,7 @@
   - name: create a file and add the line
     lineinfile:
      path: /home/ansible/statements.txt
-     line: "Ashish and Jaya are speaking and Sowjanya is listening to it"
+     line: "Prasanth and Jaya are speaking and Sowjanya is listening to it"
      state: present
      create: true
      owner: ansible
