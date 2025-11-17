@@ -5,10 +5,10 @@
   tasks:
    - name: Create an empty file
      file:
-       path: /etc/new_ansi.txt
-     #  state: touch
-       state: absent
-       owner: root
+       path: /etc/nnnnew_ansi.txt
+       state: touch
+       #state: absent
+       owner: ansible
        group: ansible
        mode: '0640'
 ... 
