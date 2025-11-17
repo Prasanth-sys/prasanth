@@ -7,7 +7,7 @@ echo "AWS Region: $REGION"
 echo "Launch Template: $LAUNCH_TEMPLATE_ID"
 # Run AWS CLI
 instance_id=$(aws ec2 run-instances \
-    --launch-template LaunchTemplateId=$LAUNCH_TEMPLATE_ID \
+    --launch-template $LAUNCH_TEMPLATE_ID \
     --region $REGION \
     --query "Instances[0].InstanceId" \
     --output text)
@@ -23,4 +23,5 @@ aws ec2 create-tags \
     --tags Key=Name,Value=Jenkins-Launched-Instance \
     --region $REGION
 echo "Tag applied to instance: Jenkins-Launched-Instance"
+
 #End
