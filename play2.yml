@@ -6,7 +6,7 @@
   become_user: root
   tasks:
    - name: Task1 - Create group
-   #Crate a group.
+   #Create a group.
      ansible.builtin.group:
       name: sapdev
       state: present
